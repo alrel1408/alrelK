@@ -4,7 +4,7 @@ require_once('config.php');
 
 function cip_enc($str)
 {
-    $password = 'tppgaming';
+    $password = 'alrel';
     $method = 'aes-256-cbc';
     $password = substr(hash('sha256', $password, true), 0, 32);
     $iv = chr(0x1) . chr(0x3) . chr(0x3) . chr(0x7) . chr(0x7) . chr(0x3) . chr(0x3) . chr(0x1) . chr(0x1) . chr(0x3) . chr(0x3) . chr(0x7) . chr(0x7) . chr(0x3) . chr(0x3) . chr(0x1);
